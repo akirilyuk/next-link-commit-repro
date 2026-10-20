@@ -1,0 +1,17 @@
+{
+  "name": "next-link-commit-repro",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "start": "next start -p 3000",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}

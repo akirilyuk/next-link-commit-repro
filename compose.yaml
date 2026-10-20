@@ -1,0 +1,17 @@
+services:
+  repro:
+    build:
+      context: .
+      args:
+        NEXT_VERSION: ${NEXT_VERSION:-16.2.6}
+        VARIANT: ${VARIANT:-}
+    cpus: 2
+    environment:
+      RUNS: ${RUNS:-300}
+      MAX_FAILURES: ${MAX_FAILURES:-0}
+      ROW_PREFETCH: ${ROW_PREFETCH:-}
+      PROBE_ALWAYS: ${PROBE_ALWAYS:-}
+      SIDEBAR: ${SIDEBAR:-}
+      LOAD_DELAY_MS: ${LOAD_DELAY_MS:-}
+    volumes:
+      - ./results:/app/results

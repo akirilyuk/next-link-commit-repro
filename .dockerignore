@@ -1,0 +1,5 @@
+node_modules
+.next
+results
+.test-logs
+UPSTREAM-*.md
